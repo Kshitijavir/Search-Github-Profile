@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #1e1e1e; /* Dark container background */
+  padding: 2rem;
+}
+
+.search {
+  display: flex;
+  width: 90%;
+  max-width: 60rem;
+}
+.search input {
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+  border: 1px solid #424242; /* Subtle border for input */
+  border-radius: 0.4rem;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+.search input:focus-visible {
+  outline: 2px solid #bb86fc; /* Accent color for focus */
+}
+
+.primary-btn {
+  background: #bb86fc; /* Accent color */
+  color: #121212; /* Contrast text color */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  transition: background 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  background: #9b68d4; /* Darker shade on hover */
+}
+.primary-btn:active {
+  background: #7b4aa7; /* Even darker shade on active */
+}
+
+#profileContainer {
+  width: 100%;
+}
+
+.profile-box {
+  margin: auto;
+  padding: 3rem 2rem;
+  width: 90%;
+  max-width: 78rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5); /* Enhanced shadow for dark theme */
+  transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+  background-color: #242424; /* Profile box background */
+  border-radius: 0.8rem;
+}
+.profile-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.8);
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-section button {
+  align-self: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.left h1 {
+  font-size: 1.8rem;
+  color: #bb86fc; /* Accent color */
+}
+
+.avatar {
+  height: 10rem;
+  width: 10rem;
+  overflow: hidden;
+  border: 2px solid #bb86fc; /* Accent border */
+  border-radius: 50%;
+}
+.avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about {
+  margin: 2rem;
+  text-align: justify;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.5rem;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1e1e; /* Card background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.status-item h3 {
+  color: #bb86fc; /* Accent for titles */
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 2rem;
+  }
+  .search {
+    width: 100%;
+  }
+  .profile-box {
+    padding: 2rem 1rem;
+  }
+  .status {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 1.5rem;
+  }
+  .status {
+    grid-template-columns: 1fr;
+  }
+}
