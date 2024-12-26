@@ -26,11 +26,11 @@ Search-Github-Profile - v2.0<br/>
  
 ## TL;DR
  
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [ManojParkale](https://github.com/Kshitijavir/Search-Github-Profile). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Kshitijavir](https://github.com/Kshitijavir/Search-Github-Profile). Thanks!
  
 ## Built With
  
-My personal portfolio features some of my github projects as well as my resume and technical skills.<br/>
+My Search github profile features some of my github projects as well as my resume and technical skills.<br/>
  
 This project was built using these technologies.
  
